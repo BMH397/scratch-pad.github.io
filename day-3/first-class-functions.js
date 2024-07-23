@@ -34,24 +34,41 @@ function createGreaterThanFilter(base) {
  * return a Function that tests whether a given value is less than the 
  * base. (test means return true or false)
  */
+/*
+I:Input base to test against which could be a string or number 
+O: Return a function that tests whether a given value is less than the base 
+C: Test means return true or false
+E: N/A
+*/
 function createLessThanFilter(base) {
     // YOUR CODE BELOW HERE //
     
-   
+//Now lets return a function that tests whether the given value is less than the base
+return function(value) {
+    return value < base;
     
     
     // YOUR CODE ABOVE HERE //
 }
-
+}
 /** 
  * Given a startsWith character, which will be a single character, return a 
  * Function that tests whether a given String starts with the startsWith 
  * character.
  */
+/*
+I: startsWith character which will be a single character 
+O: Return a function that tests whether a given string starts with the startsWith character 
+C: N/A
+E: N/A
+*/
 function createStartsWithFilter(startsWith) {
     // YOUR CODE BELOW HERE //
     
-    
+    //Okay lets return a function that tests whether a given string starts with the startsWith character
+  return function(string) {
+    return string.startsWith(startsWith);
+  };
     
     
     // YOUR CODE ABOVE HERE //
@@ -62,10 +79,19 @@ function createStartsWithFilter(startsWith) {
  * Function that tests whether a given String ends with the endsWith 
  * character.
  */
+/*
+I: endsWith character which will be a single character
+O: Return a function that tests whether a given string ends with the endsWith character 
+C: N/A
+E: N/A
+*/
 function createEndsWithFilter(endsWith) {
     // YOUR CODE BELOW HERE //
     
-    
+     //Okay lets return a function that tests whether a given string ends with the endsWith character
+  return function(string) {
+    return string.endsWith(endsWith);
+  };
     
     
     // YOUR CODE ABOVE HERE //
