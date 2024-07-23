@@ -15,12 +15,19 @@
 /** 
  * Given an input value, print the value to the screen using console.log().
  */
-
+/*
+I: 
+O:
+C:
+E:
+*/
 
 
 function print(value) {
   // YOUR CODE BELOW HERE //
   
+  //Lets print the value to the screen using console.log()
+  console.log(value);
 
   
   // YOUR CODE ABOVE HERE //

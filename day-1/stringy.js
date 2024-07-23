@@ -251,7 +251,14 @@ E: N/A
 function sortAscending(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
   //Lets compare the two strings with if and else!!!
-  
+   //Now lets compare the two strings with if and else
+   if (stringOne < stringTwo) {
+    return 1;  //And the first string is less than 
+  } else if (stringOne > stringTwo) {
+    return -1; //Now the second string is less than 
+  } else {
+    return 0;  // Strings are equal
+  }
 
     // YOUR CODE ABOVE HERE //
 }

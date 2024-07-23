@@ -32,10 +32,35 @@
  *   c. The tests are CASE sensitive, so you MUST console.log('Good Night!') with
  *      the exact case.
  */
+/*
+I: Use else if 
+O: Depending on the hour of day 
+C: N/A
+E: N/A
+*/ 
 
 function greeter(hour) {
     // YOUR CODE BELOW HERE //
-    
+    //Lets check if the hour is between 0 and 11
+  if (hour >= 0 && hour <= 11) {
+    console.log('Good Morning!');
+  } 
+  //Now lets check if the hour is between 12 and 16
+  else if (hour >= 12 && hour <= 16) {
+    console.log('Good Afternoon!');
+  } 
+  //And now check if the hour is between 17 and 21
+  else if (hour >= 17 && hour <= 21) {
+    console.log('Good Evening!');
+  } 
+  //Now check if the hour is between 22 and 24
+  else if (hour >= 22 && hour <= 24) {
+    console.log('Good Night!');
+  } 
+  //Now If the hour is not valid, print an error message JUST INCASE
+  else {
+    console.log('Invalid hour!');
+  }
     
     
     
