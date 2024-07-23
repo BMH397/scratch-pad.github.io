@@ -21,9 +21,33 @@
  *  b. you'll need a loop, which one is best?
  *  c. you'll wanna make use of the push() method of Array.
  */
+/*
+I: Create a function called range that takes two integers as parameters 
+O: Returns an array containing integers between the two parameters 
+C: Collect the output youll return 
+E:
+*/
 function range(start, end) {
     // YOUR CODE GOES BELOW HERE //
     
+     // Create an empty array to collect the output
+  let result = [];
+  
+  //Okay lets check if start is less than or equal to end
+  if (start <= end) {
+    //Now loop from start to end and push each integer into the array
+    for (let i = start; i <= end; i++) {
+      result.push(i);
+    }
+  } else {
+    //And then loop from start to end in reverse order and push each integer into the array
+    for (let i = start; i >= end; i--) {
+      result.push(i);
+    }
+  }
+  
+  //Now lets return the array!!!
+  return result;
     
     
     
