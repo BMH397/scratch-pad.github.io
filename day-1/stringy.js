@@ -281,9 +281,9 @@ function sortDescending(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
 //Lets compare the two strings with if and else 
 if (stringOne < stringTwo) {
-    return 1;
-  } else if (stringOne > stringTwo) {
     return -1;
+  } else if (stringOne > stringTwo) {
+    return 1;
   } else {
     return 0;
   }
