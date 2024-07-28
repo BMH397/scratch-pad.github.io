@@ -64,15 +64,21 @@ E: N/A
 */
 function createStartsWithFilter(startsWith) {
     // YOUR CODE BELOW HERE //
-    
+    return function(string){
     //Okay lets return a function that tests whether a given string starts with the startsWith character
-  return function(string) {
-    return string.startsWith(startsWith);
-  };
+  return string[0].toLowerCase() === startsWith.toLowerCase()
+    //console.log(string[0],startsWith);
     
+    }  //Now lets Check if th}e string starts with the specified character and return the result
+      //return string[0].toLowerCase() === startsWith.toLowerCase()
+
+
     
-    // YOUR CODE ABOVE HERE //
 }
+    
+
+    // YOUR CODE ABOVE HERE //
+    
 
 /** 
  * Given a endsWith character, which will be a single character, return a 
@@ -90,7 +96,9 @@ function createEndsWithFilter(endsWith) {
     
      //Okay lets return a function that tests whether a given string ends with the endsWith character
   return function(string) {
-    return string.endsWith(endsWith);
+     //Now put both the string and the character to lowercase and compare the last character
+     return string[string.length - 1].toLowerCase() === endsWith.toLowerCase();
+
   };
     
     
